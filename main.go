@@ -25,7 +25,7 @@ func main() {
 
 func hello(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(map[string]string{"message": "hello from DigitalOcean"})
+	json.NewEncoder(w).Encode(map[string]string{"message": "Hello from DigitalOcean"})
 }
 
 func health(w http.ResponseWriter, r *http.Request) {
